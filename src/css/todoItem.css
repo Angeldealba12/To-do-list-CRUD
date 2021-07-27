@@ -43,7 +43,6 @@
 .isCompleted {
     height: 1.7rem;
     cursor: pointer;
-    color: green;
     background-color: transparent;
     border: 0;
 }
