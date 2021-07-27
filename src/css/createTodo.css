@@ -56,7 +56,7 @@ input:focus {
 
 @media (max-width: 1000px) {
   .create-todo {
-    width: 80vw;
+    width: 90vw;
   }
 }
 

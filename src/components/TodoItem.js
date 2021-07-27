@@ -34,7 +34,7 @@ import { useState, useEffect } from 'react'
             <p>Task: {task}</p>
             <p>Student: {student}</p> 
             </div>
-            <div>
+            <div className="buttons">
                 <button className="deleteIcon" onClick={() => { deleted(id) } }><DeleteIcon/></button>
                 <button style={{color: fcolor}} className="isCompleted" onClick={() => { handleUpdate(id, {task, student, isCompleted}) }}><CheckCircleIcon/></button>
             </div>
