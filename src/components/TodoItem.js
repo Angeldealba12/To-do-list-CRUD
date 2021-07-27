@@ -2,8 +2,14 @@ import '../css/todoItem.css';
 
 const TodoItem = ( { task, student} ) => {
     return (
-        <div>
-            {task} - {student}
+        <div className="item">
+            <div>
+            <p>Task: {task}</p>
+            <p>Student: {student}</p> 
+            </div>
+            <div>
+                
+            </div>
         </div>
     )
 }

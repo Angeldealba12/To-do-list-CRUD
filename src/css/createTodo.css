@@ -1,63 +1,68 @@
 .create-todo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: 50vh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.img{
-    width: 7rem;
-    height: 5rem;
-    background-image: url(../img/todo-icon-5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.img {
+  width: 7rem;
+  height: 5rem;
+  background-image: url(../img/todo-icon-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 input {
-    height: 2.5rem;
-    border: 0;
-    border-radius: 2rem;
-    padding: 0.8rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-      font-size: 1rem;
-      font-weight: bold;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 button {
-    width: 7rem;
-    height: 2.5rem;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #2EA8DF;
-    border: 0;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 7rem;
+  height: 2.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #2ea8df;
+  border: 0;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 @media (max-width: 1000px) {
-  
-   .create-todo{
-       width: 80vw;
-   }
+  .create-todo {
+    width: 80vw;
+  }
 }
+
+
+@media (max-width: 750px) {
+    .create-todo {
+      height: 40vh;
+    }
+  }
+  

@@ -8,10 +8,14 @@ const CreateTodo = ( { handleSubmit, register, onCreateTask} ) => {
             <form onSubmit={handleSubmit((onCreateTask))}>
                 <div className="img"></div>
                 <div>
-                   <input type="text" placeholder="Student Name" {...register("student")}/> 
+                   <input type="text" placeholder="Student Name" {...register("student", {
+                       required: true
+                   })}/> 
                 </div>
                 <div>
-                    <input type="text" placeholder="Task" {...register("task")}/> 
+                    <input type="text" placeholder="Task" {...register("task", {
+                        required: true
+                    })}/> 
                 </div>
                 <button>New Task</button>
             </form>
