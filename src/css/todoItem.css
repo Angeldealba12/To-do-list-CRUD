@@ -19,6 +19,7 @@
 .item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
   width: 95%;
   padding: 0.5rem;
@@ -30,8 +31,26 @@
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.deleteIcon{
+    display: flex;
+    align-items: center;
+    color: red;
+    border: 0; 
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.isCompleted {
+    height: 1.7rem;
+    cursor: pointer;
+    color: green;
+    background-color: transparent;
+    border: 0;
+}
+
 @media (max-width: 1000px) {
   .todoItem {
     width: 80vw;
   }
 }
+

@@ -31,7 +31,6 @@
 @media (max-width: 750px) {
   
   .child-app {
-   flex-direction: column;
    height: 120vh;
   }
   
