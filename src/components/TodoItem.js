@@ -1,3 +1,4 @@
+import '../css/todoItem.css';
 
 const TodoItem = ( { task, student} ) => {
     return (

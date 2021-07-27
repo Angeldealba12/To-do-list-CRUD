@@ -39,7 +39,7 @@ const TodoContainer = () => {
     return (
         <div className="child-app">
         <CreateTodo handleSubmit={handleSubmit} register={register} onCreateTask={onCreateTask}/>
-        {list}
+        <div className="todoItem">{list}</div>
         </div>
     )
 }
