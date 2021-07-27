@@ -14,7 +14,9 @@ import { useState, useEffect } from 'react'
     useEffect(() =>{
         if(!isCompleted){
             setColor('white')
-            
+            setBackgroundColor('#2ea8df')
+            setLineThrough('none')
+            setFColor('black')
         }else{
             setColor('black')
             setBackgroundColor('#71EFA3')
