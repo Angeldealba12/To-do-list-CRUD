@@ -5,13 +5,14 @@ import { useForm } from 'react-hook-form'
 import CreateTodo from './CreateTodo';
 import { create } from './crud'
 import { deleteTask } from './crud'
-
+import { completeTask } from './crud';
 
 
 const TodoContainer = () => {
 
     const [tasks, setTasks] = useState([]);
     const { handleSubmit, register, reset } = useForm();
+    const [updateStatus, setUpdateStatus] = useState(false);
    
     
 
@@ -47,6 +48,17 @@ const TodoContainer = () => {
         miFunc()
     }
 
+    const onCompleteTask = (id, data) => {
+            data.isCompleted = !data.isCompleted
+            const miFunc = async () => {
+                const res = await completeTask(id, data)
+                setUpdateStatus(true)
+                return res
+            }
+            miFunc()
+            setUpdateStatus(false)
+    }
+
 
     const list = tasks.map((value) => 
     <TodoItem 
@@ -55,6 +67,8 @@ const TodoContainer = () => {
     key={value.id} 
     id={value.id} 
     deleted={onDeleteTask}
+    isCompleted={value.isCompleted}
+    handleUpdate={onCompleteTask} 
     />)
 
 
@@ -66,6 +80,7 @@ const TodoContainer = () => {
         onCreateTask={onCreateTask}
         />
         <div className="todoItem">{list}</div>
+        {updateStatus}
         </div>
     )
 }

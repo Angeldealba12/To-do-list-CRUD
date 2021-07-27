@@ -19,6 +19,7 @@ const CreateTodo = ( { handleSubmit, register, onCreateTask} ) => {
                 </div>
                 <button>New Task</button>
             </form>
+
         </div>
     )
 }
