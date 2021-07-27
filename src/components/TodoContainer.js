@@ -25,15 +25,13 @@ const TodoContainer = () => {
   };
 
   useEffect(() => {
-    if(!updateStatus){
         const myFunc = async () => {
             const data = await read();
       
             setTasks(data.todos);
-            console.log(data.todos);
+            setUpdateStatus(false)
           };
           myFunc();
-    }  
     
   }, [updateStatus]);
 
