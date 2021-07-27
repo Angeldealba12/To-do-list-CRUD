@@ -1,10 +1,12 @@
+import '../css/createTodo.css';
 
 const CreateTodo = ( { handleSubmit, register, onCreateTask} ) => {
 
    
     return(
-        <div>
+        <div className="create-todo">
             <form onSubmit={handleSubmit((onCreateTask))}>
+                <div className="img"></div>
                 <div>
                    <input type="text" placeholder="Student Name" {...register("student")}/> 
                 </div>
